@@ -22,7 +22,22 @@ It is also available as a Docker container:
 
 # CloudFormation
 
-The program `etcd-aws-cfn` generates and deploys a CloudFormation template:
+The program `etcd-aws-cfn` generates and deploys a CloudFormation template.
+
+You need to install all the dependencies in order to build `etcd-aws-cfn`. We use `glide` for that.
+
+    brew install glide
+
+Clone the this repository under your GOPATH:
+
+    export GOPATH=$HOME/Gopath # skip if you already have GOPATH set
+    export GO15VENDOREXPERIMENT=1 # required if you're using an old version of go(v1.5)
+
+Install the dependencis:
+
+    glide install
+
+Finally, build `etcd-aws-cfn` and try it:
 
     go install ./...
     etcd-aws-cfn -key-pair my-key

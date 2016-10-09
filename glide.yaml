@@ -1,0 +1,34 @@
+package: github.com/crewjam/etcd-aws
+import:
+- package: github.com/Sirupsen/logrus
+- package: github.com/aws/aws-sdk-go
+  subpackages:
+  - aws
+  - aws/awserr
+  - aws/session
+  - service/cloudwatch
+  - service/ec2
+  - service/s3
+  - service/s3/s3manager
+- package: github.com/coreos/go-etcd
+  subpackages:
+  - etcd
+- package: github.com/crewjam/awsregion
+- package: github.com/crewjam/ec2cluster
+- package: github.com/crewjam/go-cloudformation
+  subpackages:
+  - deploycfn
+- package: gopkg.in/gemnasium/logrus-airbrake-hook.v2
+- package: github.com/stretchr/testify/assert
+- package: github.com/lsegal/gucumber
+- package: github.com/PuerkitoBio/goquery
+- package: github.com/mitchellh/go-wordwrap
+- package: github.com/andybalholm/cascadia
+- package: golang.org/x/net/html
+- package: gopkg.in/airbrake/gobrake.v2
+- package: github.com/shiena/ansicolor
+- package: golang.org/x/text/encoding
+- package: golang.org/x/text/encoding/charmap
+- package: golang.org/x/text/encoding/htmlindex
+- package: golang.org/x/text/transform
+- package: golang.org/x/crypto/ssh/terminal
